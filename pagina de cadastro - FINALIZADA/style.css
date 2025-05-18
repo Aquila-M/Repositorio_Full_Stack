@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50dvw;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+}
+
+form {
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+h1 {
+  color: #1e293b;
+  font-size: 36px;
+}
+
+main p {
+  color: #475569;
+  font-size: 16px;
+}
+
+.input_data {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form input {
+  width: fixed 384px;
+  height: 53px;
+  border-radius: 4px;
+  border: 2px solid #e2e8f0;
+  padding: 16px 12px;
+  gap: 10px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  color: #94a3b8;
+  outline: none;
+}
+
+form input:focus {
+  border: 2px solid #7c3aed;
+}
+.input_data .senha_input {
+  background-image: url(./assets/eye-off.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+.senha a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+.senha a:hover {
+  text-decoration: underline;
+}
+
+.input_data .senha {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+}
+
+.description a {
+  font-weight: 700;
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+.description a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 700;
+  width: fixed 384px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 16px 24px 16px 24px;
+  gap: 10px;
+  background-color: #7c3aed;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #9f67ff;
+}
+
+header img {
+  width: 16rem;
+  height: 5.4rem;
+}
+header {
+  place-self: start;
+  margin-left: 230px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 11.4rem;
+  max-width: 38.4rem;
+  gap: 40px;
+}
+
+.headline {
+  max-width: 35rem;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.bg img {
+  display: flex;
+  width: 50dvw;
+}

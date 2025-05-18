@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+* {
+  font-family: "Source Serif 4", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.decima {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #feece0;
+  height: 50dvh;
+  gap: 56px;
+}
+.decima .pamonha .desc {
+  display: flex;
+  gap: 15px;
+  font-size: 35px;
+  padding-top: 8px;
+}
+.debaixo {
+  display: flex;
+  background-color: #9b6647;
+  height: 50dvh;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.debaixo .title {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.pamonha h1 {
+  font-weight: 700;
+  font-size: 72px;
+  color: #58190a;
+}
+
+.pamonha p {
+  font-weight: 400;
+  font-size: 38px;
+  color: #58190a;
+}
+
+.pamonha span {
+  font-weight: 400;
+  font-size: 35px;
+  color: #9b6647;
+}
+
+.debaixo h2 {
+  font-weight: 700;
+  font-size: 38px;
+  color: #feece0;
+}
+
+.debaixo ul,
+ol {
+  font-weight: 400;
+  font-size: 28px;
+  color: #feece0;
+  list-style-position: inside;
+}

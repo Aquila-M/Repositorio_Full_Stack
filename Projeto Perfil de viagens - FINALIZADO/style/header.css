@@ -1,0 +1,16 @@
+header {
+  padding-block: 32px;
+  font: var(--text-sm);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .profile img {
+  border-radius: 2000px;
+  width: 150px;
+  height: 150px;
+}
