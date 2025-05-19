@@ -1,0 +1,48 @@
+.bg {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 50dvw;
+  height: 100dvh;
+  background-color: #fee7d6;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+}
+
+.bg img {
+  width: 496px;
+  height: 368px;
+}
+
+.rodape {
+  width: 564px;
+  padding-bottom: 32px;
+}
+
+.rodape img {
+  width: 203px;
+  height: 32px;
+}
+
+.rodape h1 {
+  line-height: 1.2;
+  padding-bottom: 12px;
+}
+
+.bg h1 {
+  color: #292524;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.color-aprendizado {
+  color: #e43a12;
+}
+
+.rodape p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #57534e;
+}

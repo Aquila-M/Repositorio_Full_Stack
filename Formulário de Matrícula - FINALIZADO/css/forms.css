@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.headline2 {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 24px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.forms main {
+  gap: 100px;
+}
+
+body {
+  width: 120px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.header:hover {
+  border: none;
+  background-color: var(--surface-disabled);
+  border-radius: 10px;
+  width: 84px;
+}
+
+.header img {
+  align-items: center;
+  justify-content: center;
+}
+
+.header span {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+.seta {
+  height: 40px;
+}
+
+.image {
+  height: 40px;
+  width: 40px;
+}
+
+.headline .resp {
+  border: 1px solid var(--stroke-default);
+  border-radius: 8px;
+  height: 48px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+.headline h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.headline h1 {
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.headline select {
+  border: 1px solid var(--stroke-default);
+  border-radius: 8px;
+  height: 48px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+.headline textarea {
+  border: 1px solid var(--stroke-default);
+  border-radius: 8px;
+  height: 100px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+.headline .data {
+  background-image: url(../assets/calendar-03.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 36px;
+  border: 1px solid var(--stroke-default);
+  border-radius: 8px;
+  height: 48px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.headline .data::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+} /*Este peguei no ChatGPT pois não sabia como esconder o ícone padrão de calendário.*/
+
+.headline select {
+  appearance: none;
+  background-image: url(../assets/arrow-down-01.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  color: var(--text-secondary);
+}
+
+.headline p,
+label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.headline .pdf {
+  border: 2px dashed var(--stroke-default);
+  border-radius: 8px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  background-image: url(../assets/cloud-upload.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
+  color: var(--stroke-default);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.headline .pdf:hover {
+  color: var(--text-tertiary);
+  background-image: url(../assets/cloud-upload.png);
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  background-size: 40px;
+  background-color: var(--surface-secondary);
+  border-color: var(--stroke-highlight);
+}
+
+#pdf_input {
+  display: none;
+}
+
+.headline2 .momento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.headline2 .turno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  border: 1px solid var(--stroke-default);
+  border-radius: 10px;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.headline2 .turno input {
+  cursor: pointer;
+  border: 2px solid var(--stroke-default);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.headline2 .turno input:hover {
+  appearance: none;
+  border: 2px solid var(--brand-dark);
+}
+
+.headline2 .turno:hover {
+  border: 1px solid var(--brand-dark);
+}
+
+.headline2 .turno input:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--surface-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.headline2 .turno input:checked:before {
+  opacity: 1;
+  background-image: url(../assets/Vector.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.headline2 .turno:has(input:checked) {
+  border: 2px solid var(--brand-dark);
+}
+
+.esportes {
+  display: flex;
+  gap: 16px;
+}
+
+.headline .obs {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.headline .obs input {
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid var(--stroke-default);
+  border-radius: 5px;
+  width: 19px;
+  height: 19px;
+  top: 2.5px;
+  left: 2.5px;
+  margin-top: 3px;
+}
+
+.headline .obs input:hover {
+  outline: none;
+  border: 1px solid var(--brand-dark);
+}
+
+.headline .obs input:checked {
+  background-image: url(../assets/Vector.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  border: none;
+}
+
+.headline .obs .terms span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--brand-dark);
+}
+
+.headline .obs .terms {
+  font-weight: 400;
+  font-size: 16px;
+  width: 492px;
+  height: 48px;
+}
+
+.changes .salvar {
+  cursor: pointer;
+  width: 189px;
+  height: 48px;
+  min-width: 120px;
+  border-radius: 8px;
+  border: 1px solid var(--text-highlight);
+  padding: 12px 24px;
+  gap: 8px;
+  color: var(--text-highlight);
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  background-color: var(--surface-primary);
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0;
+  line-height: 150%;
+}
+
+.changes {
+  display: flex;
+  gap: 16px;
+  top: 16px;
+  justify-content: right;
+}
+.changes .fazer_mat {
+  cursor: pointer;
+  border: none;
+  width: 174px;
+  height: 48px;
+  min-width: 120px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  gap: 8px;
+  background-color: var(--brand-dark);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--surface-primary);
+}
+
+.changes .fazer_mat:hover {
+  background-color: var(--brand-mid);
+}
+
+.changes .salvar:hover {
+  color: var(--surface-primary);
+  background-color: var(--text-highlight);
+}
+
+.headline .resp:hover {
+  outline: none;
+  border: 1px solid var(--brand-dark);
+}
+.headline .data:hover {
+  outline: none;
+  border: 1px solid var(--brand-dark);
+}
+
+.headline select:hover {
+  outline: none;
+  border: 1px solid var(--brand-dark);
+}
+.headline textarea:hover {
+  outline: none;
+  border: 1px solid var(--brand-dark);
+}
+
+.headline .resp:focus {
+  outline: none;
+  border: 2px solid var(--stroke-highlight);
+}
+.headline .data:focus {
+  outline: none;
+  border: 2px solid var(--stroke-highlight);
+}
+
+.headline select:focus {
+  outline: none;
+  border: 2px solid var(--stroke-highlight);
+}
+.headline textarea:focus {
+  outline: none;
+  border: 2px solid var(--stroke-highlight);
+}

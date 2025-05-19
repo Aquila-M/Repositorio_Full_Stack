@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --brand-light: #f67841;
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+  --surface-primary: #fff;
+  --surface-secondary: #fee7d6;
+  --surface-disabled: #e7e5e4;
+  --stroke-default: #d6d3d1;
+  --stroke-highlight: #f3541c;
+  --semantic-error: #dc2626;
+}

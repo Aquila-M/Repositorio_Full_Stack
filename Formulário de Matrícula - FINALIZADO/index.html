@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <meta name="author" content="Aquila Morais" />
+    <meta
+      name="description"
+      content="Página de Fórmulário como exercício de HTML e CSS"
+    />
+  </head>
+  <body>
+    <div id="page" class="flex">
+      <div class="container">
+        <div class="forms">
+          <header class="header">
+            <img src="./assets/arrow-left-02.svg" alt="" />
+            <span>Voltar</span>
+          </header>
+
+          <main class="main">
+            <div class="headline">
+              <h1>Formulário de matrícula</h1>
+              <p>
+                Preencha os dados abaixo para matricular seu filho na escola de
+                educação infantil Estrelas do Amanhã.
+              </p>
+            </div>
+
+            <form action="" class="info">
+              <div class="headline">
+                <h3>Informações da criança</h3>
+                <label for="nome">Nome completo</label>
+                <input
+                  id="nome"
+                  type="text"
+                  name="nome"
+                  placeholder="Digite seu nome completo"
+                  class="resp"
+                  required
+                />
+
+                <label for="data">Data de nascimento</label>
+                <input
+                  id="data"
+                  type="date"
+                  class="data"
+                  placeholder="Digite sua data de nascimento"
+                  required
+                />
+
+                <label for="sexo">Sexo</label>
+                <select name="" id="sexo">
+                  <option selected disabled value="">
+                    Selecione seu gênero
+                  </option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="">Feminino</option>
+                </select>
+
+                <label for="info_med">Informações médicas</label>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Descreva suas especificações médicas"
+                ></textarea>
+
+                <label for="nascimento">Certidão de nascimento</label>
+
+                <label for="pdf_input" class="pdf">
+                  <span class="choose">
+                    Clique aqui para selecionar arquivos
+                  </span>
+                </label>
+                <input type="file" accept="image/*" id="pdf_input" />
+              </div>
+
+              <div class="headline">
+                <h3>Endereço residencial</h3>
+                <label for="cep">CEP</label>
+                <input
+                  type="text"
+                  id="cep"
+                  placeholder="Digite seu CEP"
+                  class="resp"
+                />
+
+                <label for="rua">Rua</label>
+                <input
+                  type="text"
+                  id="rua"
+                  placeholder="Digite sua rua"
+                  class="resp"
+                />
+
+                <label for="cidade">Cidade</label>
+                <input
+                  type="text"
+                  id="cidade"
+                  placeholder="Digite sua cidade"
+                  class="resp"
+                />
+
+                <label for="numero">Número</label>
+                <input
+                  type="text"
+                  id="numero"
+                  placeholder="Seu número"
+                  class="resp"
+                />
+
+                <label for="estado">Estado</label>
+                <input
+                  type="text"
+                  id="estado"
+                  placeholder="Digite a sigla do seu estado"
+                  class="resp"
+                />
+              </div>
+
+              <div class="headline">
+                <h3>Informações do responsável</h3>
+                <label for="nome">Nome do responsável</label>
+                <input
+                  type="text"
+                  id="nome"
+                  placeholder="Digite o nome completo"
+                  class="resp"
+                />
+                <label for=""
+                  >Principal responsável legal e contato de emergência</label
+                >
+
+                <label for="tel">Telefone</label>
+                <input
+                  type="tel"
+                  id="tel"
+                  placeholder="Telefone"
+                  class="resp"
+                />
+
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Digite seu email"
+                  class="resp"
+                />
+              </div>
+
+              <div class="headline2">
+                <h3>Opções de matrícula</h3>
+
+                <label for="turno">Selecione o turno de estudo</label>
+                <div class="momento">
+                  <label for="manha" class="turno">
+                    <input type="radio" id="manha" name="horario" />
+
+                    <img src="./assets/sun-02.png" alt="" class="image" />
+                    Manhã</label
+                  >
+
+                  <label for="tarde" class="turno">
+                    <input type="radio" id="tarde" name="horario" />
+
+                    <img src="./assets/sun-cloud-02.png" alt="" class="image" />
+                    Tarde</label
+                  >
+                </div>
+
+                <label for="esp"
+                  >Em qual esporte você gostaria de inscrever seu filho?</label
+                >
+
+                <div class="esportes">
+                  <label for="futebol" class="turno">
+                    <input type="radio" id="futebol" name="esporte" />
+
+                    <img src="./assets/football.png" alt="" class="image" />
+                    Futebol</label
+                  >
+
+                  <label for="basquete" class="turno">
+                    <input type="radio" id="basquete" name="esporte" />
+
+                    <img
+                      src="./assets/basketball-02.png"
+                      alt=""
+                      class="image"
+                    />
+                    Basquete</label
+                  >
+
+                  <label for="natacao" class="turno">
+                    <input type="radio" id="natacao" name="esporte" />
+
+                    <img src="./assets/swimming.png" alt="" class="image" />
+                    Natação</label
+                  >
+
+                  <label for="yoga" class="turno">
+                    <input type="radio" id="yoga" name="esporte" />
+
+                    <img src="./assets/yoga-02.png" alt="" class="image" />
+                    Yoga</label
+                  >
+
+                  <label for="volley" class="turno">
+                    <input type="radio" id="volley" name="esporte" />
+
+                    <img src="./assets/volleyball.png" alt="" class="image" />
+                    Volley</label
+                  >
+
+                  <label for="boxe" class="turno">
+                    <input type="radio" id="boxe" name="esporte" />
+
+                    <img
+                      src="./assets/boxing-glove-01.png"
+                      alt=""
+                      class="image"
+                    />
+                    Boxe</label
+                  >
+                </div>
+              </div>
+
+              <div class="headline">
+                <div class="obs">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="termos"
+                    class="checklist"
+                  />
+                  <div class="label-checkbox">
+                    <label for="termos" class="terms"
+                      >Declaro que li e concordo com os
+                      <span>Termos e Condições</span> e com a
+                      <span>Política de Privacidade</span> da escola Estrela do
+                      Amanhã.</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <div class="changes">
+              <button class="salvar">Salvar respostas</button>
+              <button class="fazer_mat">Fazer matrícula</button>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <div class="bg">
+        <div class="rodape">
+          <img src="./assets/Frame 48095956.svg" alt="" />
+          <h1>
+            Porque cada momento de
+            <span class="color-aprendizado">aprendizado</span> conta
+          </h1>
+          <p>
+            Inscreva seu filho em nossa escola e veja-o florescer em um ambiente
+            acolhedor, seguro e estimulante.
+          </p>
+        </div>
+        <img src="./assets/pana.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
