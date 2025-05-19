@@ -15,7 +15,7 @@ Este repositório contém alguns exercícios focados na prática de **HTML** e *
 3. **Página de um Perfil de Viagens**  
    Exemplo de perfil de viajante com galeria de imagens, texto descritivo e layout responsivo com Flexbox.
 
-4. **Página de Matrícula de um colégio**
+4. **Página de Matrícula de um colégio**   
    Ficha de matrícula com recursos de interação do mouse com o formulário, utilização de :hover, :focus e :checked e totalmente customizados e uma imagem do lado direito estático.
 
 ---
