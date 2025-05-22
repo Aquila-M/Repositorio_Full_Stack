@@ -1,0 +1,74 @@
+.section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  background-image: url(../Assets/images/Background_Contacts.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100dvw 787px;
+  width: 100dvw;
+  height: 787px;
+  padding: 128px 120px 200px;
+}
+
+.section4 .contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.section4 .contato span {
+  font: var(--subtitle);
+  color: var(--purple);
+}
+
+.section4 .contato h2 {
+  font: var(--title-md);
+  color: var(--gray-600);
+}
+
+.section4 .contato p {
+  font: var(--text-md);
+  color: var(--gray-500);
+}
+
+.section4 .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.section4 .links button {
+  background-color: var(--gray-300);
+  width: 400px;
+  height: 68px;
+  border-radius: 8px;
+  padding: 20px;
+  gap: 12px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font: var(--text-md);
+  color: var(--gray-500);
+}
+
+.section4 .links button .rede-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.section4 .links .logo {
+  width: 28px;
+  height: 28px;
+}

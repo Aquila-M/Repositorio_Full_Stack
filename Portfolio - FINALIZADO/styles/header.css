@@ -1,0 +1,95 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.perfil {
+  background-image: url(../Assets/images/Background_Intro.png);
+  background-size: 100dvw 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 750px;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.perfil .tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+
+.perfil .tag {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  gap: 8px;
+  background-color: var(--gray-300);
+  border-radius: 50px;
+  font: var(--text-md);
+  color: var(--gray-500);
+}
+
+header .avatar {
+  position: relative;
+}
+
+header .avatar .ft-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+header .avatar .ft-perfil {
+  width: 90px;
+  top: 8px;
+  left: 8px;
+  border-radius: 50%;
+  border: 2px solid var(--red);
+  padding: 3px;
+}
+
+header .desc {
+  display: flex;
+  width: 680px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header .desc .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .desc .title h3 {
+  font: var(--subtitle);
+  color: var(--gray-500);
+}
+
+header .desc .title span {
+  color: var(--red);
+}
+
+header .desc .title h1 {
+  font: var(--title-lg);
+  color: var(--gray-600);
+}
+
+header .desc p {
+  font: var(--text-sm);
+  text-align: center;
+  color: var(--gray-400);
+}

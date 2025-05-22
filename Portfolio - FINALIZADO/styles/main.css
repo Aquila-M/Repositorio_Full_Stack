@@ -1,0 +1,143 @@
+* {
+  overflow-x: hidden;
+}
+
+.section3 {
+  background-color: var(--gray-100);
+  width: 100dvw;
+  min-height: 480px;
+  padding: 88px 120px 120px;
+  gap: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.section3 .top h3 {
+  font: var(--subtitle);
+  color: var(--red);
+}
+
+.section3 .top .h3 {
+  font: var(--title-md);
+  color: var(--gray-600);
+}
+
+.section3 .grid .card h3 {
+  font: var(--title-sm);
+  color: var(--gray-600);
+}
+
+.section3 .grid .card p {
+  font: var(--text-sm);
+  color: var(--gray-500);
+  gap: 10px;
+}
+
+.section3 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.section3 .grid .card {
+  border-radius: 12px;
+  border: 2px solid var(--gray-200);
+  padding: 20px;
+  gap: 20px;
+}
+
+.section2 {
+  background-color: var(--gray-200);
+  height: 917px;
+  width: 100dvw;
+  padding: 72px 120px 144px;
+  gap: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.section2 .top h3 {
+  font: var(--subtitle);
+  color: var(--red);
+}
+
+.section2 .top .h3 {
+  font: var(--title-md);
+  color: var(--gray-600);
+}
+
+.section2 .grid {
+  display: grid;
+  grid-template-areas:
+    "p1 p2 p3"
+    "p4 p5 p6";
+  gap: 20px;
+}
+
+.section2 .grid #p1 {
+  grid-area: p1;
+}
+
+.section2 .grid #p2 {
+  grid-area: p2;
+}
+
+.section2 .grid #p3 {
+  grid-area: p3;
+}
+
+.section2 .grid #p4 {
+  grid-area: p4;
+}
+
+.section2 .grid .projeto {
+  width: 330px;
+  height: 280px;
+  border-radius: 12px;
+  padding: 12px;
+  gap: 20px;
+  background-color: var(--gray-300);
+}
+
+.section2 .grid .projeto img {
+  width: 306px;
+  height: 156px;
+  border-radius: 8px;
+}
+
+.section2 .grid .projeto-desc {
+  margin-top: 20px;
+  padding: 4px;
+  gap: 10px;
+}
+
+.section2 .grid .projeto-desc h3 {
+  font: var(--title-sm);
+  color: var(--gray-600);
+  gap: 8px;
+}
+
+.section2 .grid .projeto-desc p {
+  font: var(--text-sm);
+  color: var(--gray-500);
+}
