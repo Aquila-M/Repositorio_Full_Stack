@@ -49,9 +49,9 @@
   width: 400px;
   height: 68px;
   border-radius: 8px;
-  padding: 20px;
+  padding: 18px;
   gap: 12px;
-  border: none;
+  border: 1px solid transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -71,4 +71,19 @@
 .section4 .links .logo {
   width: 28px;
   height: 28px;
+}
+
+.section4 .links .azul {
+  display: none;
+}
+
+.section4 .links button:hover {
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  .logo {
+    display: none;
+  }
+  .azul {
+    display: flex;
+  }
 }

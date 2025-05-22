@@ -117,6 +117,12 @@
   padding: 12px;
   gap: 20px;
   background-color: var(--gray-300);
+  border: 1px solid transparent;
+}
+
+.section2 .grid .projeto:hover {
+  border: 1px solid var(--gray-400);
+  cursor: pointer;
 }
 
 .section2 .grid .projeto img {
