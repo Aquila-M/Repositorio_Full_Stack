@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Áquila Morais">
+    <meta name="description" content="Lista online para adicionar e remover itens.">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>QuickList</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.svg" alt="">
+    </header>
+
+    <main>
+        <a href="#" class="voltar">← Voltar</a>
+        <h2>Compras da semana</h2>
+        <div class="form-group">
+            <input type="text" id="item-input" placeholder="Adicione um novo item" />
+            <button id="add-btn">Adicionar item</button>
+        </div>
+
+        <ul id="lista"></ul>
+
+        <div id="alerta" class="alerta hidden">
+            O item foi removido da lista
+            <span id="fechar-alerta">&times;</span>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
